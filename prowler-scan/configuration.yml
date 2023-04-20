@@ -1,0 +1,17 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000
+  adminConnectors:
+    - type: http
+      port: 9001
+
+scanner:
+  hostname: host1
+  application: app1
+  location: E:\logs
+  sensitiveDataTypes:
+    - CREDIT_CARD_NUMBER
+    - BANK_ACCOUNT_NUMBER
+    - PHONE_NUMBER
+
